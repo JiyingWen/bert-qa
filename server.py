@@ -6,8 +6,8 @@ except:
 	my_path = os.path.normpath(join(os.getcwd(), path))
 import code
 import logging
-from drqa import retriever
-from drqa.retriever import utils
+from retriever.drqa import retriever
+from retriever.drqa.retriever import utils
 import sqlite3
 import requests
 import json
@@ -16,8 +16,8 @@ from flask import Flask, request, jsonify
 # ------------------------------------------------------------------------------
 # assets
 # ------------------------------------------------------------------------------
-doc_db = os.path.join(my_path, 'doc_db/sap_wiki_page.db')
-retriever_model = os.path.join(my_path, 'tfidf_model/sap_wiki_page-tfidf-ngram=2-hash=16777216-tokenizer=simple.npz')
+doc_db = os.path.join(my_path, 'retriever/doc_db/sap_wiki_page.db')
+retriever_model = os.path.join(my_path, 'retriever/tfidf_model/sap_wiki_page-tfidf-ngram=2-hash=16777216-tokenizer=simple.npz')
 bert_url = 'http://localhost:5000/predict'
 
 # ------------------------------------------------------------------------------

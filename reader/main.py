@@ -8,8 +8,8 @@ import tensorflow as tf
 from tensorflow_serving.apis import predict_pb2
 from tensorflow_serving.apis import prediction_service_pb2_grpc
 from flask import Flask, request, jsonify
-from reader import tokenization
-from reader.run_squad import *
+import tokenization
+from run_squad import *
 
 try: 
 	my_path = os.path.dirname(os.path.realpath(__file__))
