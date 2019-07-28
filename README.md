@@ -1,5 +1,7 @@
 # bert-qa
 
+![Alt text](misc/chatbot.png?raw=true "Chatbot UI")
+
 ![Alt text](misc/architecture.png?raw=true "System Architecture")
 
 
