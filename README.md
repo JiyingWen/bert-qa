@@ -2,7 +2,7 @@
 
 ![Alt text](misc/chatbot.png?raw=true "Chatbot UI")
 
-We demonstrate an end-to-end question answering system that integrates BERT with an information retriever system. It is able to answer questions related to a knowledge base (such as technical documents, business reports, etc.) asked by user in near real time using information retrieval and natural language understanding technique.
+We demonstrate an end-to-end question answering system that integrates BERT with an information retriever system. It is able to answer questions related to a domain specific knowledge base (such as technical documents, business reports, manuals, etc.) asked by user in near real time using information retrieval and natural language understanding technique.
 
 The architecture, as shown below,  is comprised of two main modules: the document retriever and the BERT reader. The retriever is responsible for selecting paragraphs of text that contain the answer, which is then passed to the reader to identify an answer span.
 
